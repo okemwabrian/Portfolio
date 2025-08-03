@@ -1,88 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://kit.fontawesome.com/e1d9416fd9.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+    <!-- Header Section -->
     <div id="header">
         <div class="container">
-           <nav>
-            <img src="logo.png" class="logo">
-            <ul>
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#skills">Skills</a></li>
-            </ul>
-           </nav> 
-           <div class="header-text">
-            <p>UI/UX Designer</p>
-               <p> WEB and MOBILE Aplication Developer</p>
-               
-               <p><b><i>Virtual Assistance</i></b></p>
-            <h1>Hi, I'm <span>Okemwa Brian</span> <br>From Nairobi, Kenya</h1>
-           </div>
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <p>WEB and MOBILE Application Developer</p>
+                <p><b><i>Virtual Assistance</i></b></p>
+                <h1>Hi, I'm <span>Okemwa Brian</span> <br>From Nairobi, Kenya</h1>
+            </div>
         </div>
     </div>
+
+    <!-- About Section -->
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="my img.jpeg">
+                    <img src="my img.jpeg" alt="Profile image">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>I am Okemwa Brian, currently a student at Kenyatta University, pursuing a degree in Mathematics and Computer Science. 
-                        With a keen interest in Information Technology, I am passionate about coding and conducting research.
-                         My hobbies include coding and exploring the latest trends in technology. 
-                         My professional goals are to become a skilled software engineer and a successful entrepreneur.
-                          Over the next 1-2 years, I aim to enhance my web development skills, complete significant projects, and lay the groundwork for my entrepreneurial ventures.
-                         I am committed to leveraging my academic knowledge and technical skills to make impactful contributions to the tech industry.</p>
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                        </div> 
-                        <div class="tab-contents active-tab" id="skills">
-    <ul>
-        <li><span>UI/UX Design</span><br>Designing clean and responsive web/mobile interfaces</li>
-        <li><span>Web Development</span><br>HTML, CSS, JavaScript, Django for dynamic websites</li>
-        <li><span>App Development</span><br>Building Android/iOS apps using Flutter and Java</li>
-        <li><span>Virtual Assistance</span><br>Admin support, social media management, scheduling</li>
-        <li><span>Communication Skills</span><br>Strong written and verbal communication</li>
-        <li><span>Programming Languages</span><br>Python, Django, Java, JavaScript</li>
-    </ul>
-</div>
-
-                        
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>UI/UX</span><br>Learning and practising web/App interface design through coursework and projects</li>
-                                <li><span>Web Development</span><br>Gaining hands-on experience in developing web applications</li>
-                                <li><span>App Development</span><br>Exploring app development by building and testing mobile applications</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>Mathematics and Computer Science</span><br>Currently pursuing a degree at Kenyatta University</li>
-                                <li><span>UI/UX Design</span><br>Studying and applying design principles in web/App interfaces</li>
-                                <li><span>Web Development</span><br>Learning to develop and manage web applications</li>
-                                <li><span>App Development</span><br>Acquiring skills in creating Android/iOS applications</li>
-                                <li><span>Virtual Assistance</span><br> Graduated from ALX KE</li>
-                            </ul>
-                        </div>
-                        
+                    <p>I am Okemwa Brian, currently a student at Kenyatta University...</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX Design</span><br>Designing clean and responsive web/mobile interfaces</li>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript, Django for dynamic websites</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps using Flutter and Java</li>
+                            <li><span>Virtual Assistance</span><br>Admin support, social media management, scheduling
+                            </li>
+                            <li><span>Communication Skills</span><br>Strong written and verbal communication</li>
+                            <li><span>Programming Languages</span><br>Python, Django, Java, JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span><br>Learning and practising web/App interface design</li>
+                            <li><span>Web Development</span><br>Gaining hands-on experience in web applications</li>
+                            <li><span>App Development</span><br>Building and testing mobile applications</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Mathematics and Computer Science</span><br>Kenyatta University</li>
+                            <li><span>UI/UX Design</span><br>Studying interface principles</li>
+                            <li><span>Web Development</span><br>Learning to develop and manage web apps</li>
+                            <li><span>App Development</span><br>Creating Android/iOS apps</li>
+                            <li><span>Virtual Assistance</span><br>Graduated from ALX KE</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Services Section -->
     <div id="services">
         <div class="container">
             <h1 class="sub-title">Services</h1>
@@ -90,119 +88,106 @@
                 <div>
                     <i class="fa-solid fa-crop"></i>
                     <h2>UI/UX Design</h2>
-                    <p>Creating modern, responsive, and user-centric web interfaces that enhance user experience and visual appeal.</p>
-                    
+                    <p>Modern, responsive, and user-centric interfaces.</p>
                     <a href="https://www.freecodecamp.org/news/ui-ux-design-guide/">Learn more</a>
                 </div>
-                
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Development</h2>
-                    <p>Developing robust websites using HTML, CSS, and JavaScript, ensuring optimal performance and compatibility across devices.</p>
-                    <p>portfolios, e-comerse wesites using Django</p>
+                    <p>HTML, CSS, JS and Django-based websites</p>
                     <a href="https://www.codecademy.com/resources/blog/what-is-web-development/">Learn more</a>
                 </div>
-                
                 <div>
                     <i class="fa-brands fa-app-store-ios"></i>
                     <h2>App Development</h2>
-                    <p>Building efficient and user-friendly Android and iOS apps that provide seamless functionality and engaging user experiences.</p>
-                    <p>Using tools like Android Studio and Dart with Flutter as a language</p>
+                    <p>Flutter and Java-based mobile apps</p>
                     <a href="https://www.moontechnolabs.com/blog/mobile-app-development-tools/">Learn more</a>
                 </div>
-                 <div>
+                <div>
                     <i class="fa-brands fa-app-store-ios"></i>
                     <h2>Virtual Assistance</h2>
-                    <p>Administrative Support. This includes scheduling meetings, managing calendars, answering phone calls, and handling emails</p>
-                    <a href="https://www.indeed.com/career-advice/finding-a-job/what-is-a-virtual-assistant">Learn more</a>
+                    <p>Admin support, email handling, scheduling</p>
+                    <a href="https://www.indeed.com/career-advice/finding-a-job/what-is-a-virtual-assistant">Learn
+                        more</a>
                 </div>
-                
             </div>
         </div>
     </div>
+
+    <!-- Portfolio Section -->
     <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">My work</h1>
+            <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="jobless.jpeg">
+                    <img src="jobless.jpeg" alt="Jobless Project">
                     <div class="layer">
                         <h3>Jobless</h3>
-                        <p>Enhancing web development and UI/UX skills through personal projects and continuous learning.</p>
-                         <p>Building a strong foundation for future career and entrepreneurial ventures.</p>
-
-                        <a href=""><i class="fa-solid fa-link"></i></a>
+                        <p>Enhancing web and UI/UX through projects.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="graphic designer.jpeg">
+                    <img src="graphic designer.jpeg" alt="Graphic Design">
                     <div class="layer">
                         <h3>Graphic Design</h3>
-                        <p>Currently refining my graphic design skills through personal projects and learning.</p>
-                        <p>Building a foundation for future opportunities in design.</p>
-
-                        <a href=""><i class="fa-solid fa-link"></i></a>
+                        <p>Refining design skills through practice.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="web developer.jpeg">
+                    <img src="web developer.jpeg" alt="Web Development">
                     <div class="layer">
                         <h3>Web Development</h3>
-                        <p>Currently honing my web development skills through personal projects and learning.</p>
-                        <p>Building a foundation for future opportunities in technology.</p>
-
-                        <a href=""><i class="fa-solid fa-link"></i></a>
+                        <p>Learning and building full-stack apps.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
             </div>
-            <a href="" class="btn">See more</a>
+            <a href="#" class="btn">See more</a>
         </div>
     </div>
 
+    <!-- Contact Section -->
     <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="sub-title">Contact me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>okemwabrian1350@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>+257112549445</p>
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> okemwabrian1350@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +257112549445</p>
                     <div class="social-icons">
                         <a href="https://m.facebook.com/yorabdfgjhg/"><i class="fa-brands fa-facebook"></i></a>
                         <a href="https://x.com/mimierix"><i class="fa-brands fa-twitter"></i></a>
                         <a href="https://www.instagram.com/trqp_crooner/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/okemwa-brian-8807b3321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://wa.me/qr/QM4L7GULAJ2JC1"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/okemwa-brian-8807b3321"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://wa.me/2547112549445?text=Hello%20Okemwa%2C%20I%20want%20to%20connect!"><i
+                                class="fa-brands fa-whatsapp"></i></a>
                     </div>
-                    <a href="Okemwa Brian cover letter.pdf" download class="btn btn2">Download Cover letter</a>
+                    <a href="Okemwa Brian cover letter.pdf" download class="btn btn2">Download Cover Letter</a>
                 </div>
                 <div class="contact-right">
-                    <form>
-                        <input type="text" name="Name" placeholder="Your name" required>
-                        <input type="email" name="Email" placeholder="Your email" required>
-                        <textarea name="Message" rows="6" placeholder="Your message" required></textarea>
+                    <form action="https://formsubmit.co/okemwabrian1350@gmail.com" method="POST">
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="message" rows="6" placeholder="Your message" required></textarea>
+                        <!-- Optional hidden fields -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/thank-you.html">
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
+
                 </div>
-            </div> 
+            </div>
             <div class="copyright">
-                <p>Copyright &copy; 2023 Okemwa Brian<i class="fa-solid fa-heart"></i>. All rights reserved.</p>
+                <p>&copy; 2023 Okemwa Brian <i class="fa-solid fa-heart"></i>. All rights reserved.</p>
             </div>
         </div>
     </div>
 
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname) {
-            for (var tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (var tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
+    <!-- External JS -->
+    <script src="script.js"></script>
 </body>
+
 </html>
