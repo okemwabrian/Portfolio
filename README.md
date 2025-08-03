@@ -2,7 +2,7 @@
     <h2 style="text-align: center; color: white; font-size: 36px; font-weight: 600;">About Me</h2>
     <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 40px;">
         <div style="flex-basis: 45%; color: white;">
-            <img src="your-photo.jpg" alt="Your photo" style="width: 100%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+            <img src="Okemwa.jpg" alt="my photo" style="width: 100%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
         </div>
         <div style="flex-basis: 50%; color: white;">
             <h3 style="font-size: 28px; font-weight: 500;">Hello, I'm Okemwa Brian!</h3>
